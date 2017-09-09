@@ -7,11 +7,11 @@ We started by cloning the assignment repository and created the virtual machine 
 ## Output
 By running the assignment_1.py script, the program outputs three different files, respectively **price_list.txt**, **price_list.csv** and **prices.png**. 
 
-**Price_list.txt** contains the following values Street, City, Price and Sqm. 
+**Price_list.txt** - TXT is a file extension for a text file, used by many different text editors. Text is a human-readable sequence of characters and the words they form can be encoded into computer-readable formats. **Price_list.txt**contains the following values Street, City, Price and Sqm. 
 
-**Price_list.csv** contains the following values Street, City, Price, Sqm and Price_per_sqm. 
+**Price_list.csv** - CSV (comma separated values) allows data to be saved in a table structure format. Generally they take the form of a text file containing information separated be commas. This file format can be used with any spreadsheet application, such as Microsoft Excel or Google Spreadsheets. **Price_list.csv** contains the following values Street, City, Price, Sqm and Price_per_sqm. 
 
-**Prices_png** contains a diagram/map that illustrates the different Prices and Sqm. 
+**Prices_png** - PNG (Portable Network Graphics) uses lossless compression and is generally considered the replacement to the GIF format, but PNG does not support animations. PNG files are typically used to store graphics on websites. **Price.png** contains a graphical/map illustration of the different prices and sqm. 
 
 The **Price_list.csv** file retrieves the following data Street, City, Price and Sqm from the **Price_List.txt** file. The **Price_list.csv** file calculates the Price_per_sqm by using the price attribute and the Sqm attribute. (Price/Sqm).
 
@@ -85,6 +85,7 @@ Toldbodgade 10A, 1 | 1253 København K | 3750000	| 184 | 20380
 Andreas Bjørns Gade 4, 3. TH | 1428 København K	| 1700000 | 54 | 31481
 
 
+### 
 
 
 
