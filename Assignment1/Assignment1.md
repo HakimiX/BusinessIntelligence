@@ -6,8 +6,11 @@ We started by cloning the assignment repository and created the virtual machine 
 
 ## Output
 By running the assignment_1.py script, the program outputs three different files, respectively **price_list.txt**, **price_list.csv** and **prices.png**. 
+
 **Price_list.txt** contains the following values Street, City, Price and Sqm. 
+
 **Price_list.csv** contains the following values Street, City, Price, Sqm and Price_per_sqm. 
+
 **Prices_png** contains a diagram/map that illustrates the different Prices and Sqm. 
 
 The **Price_list.csv** file retrieves the following data Street, City, Price and Sqm from the **Price_List.txt** file. The **Price_list.csv** file calculates the Price_per_sqm by using the price attribute and the Sqm attribute. (Price/Sqm).
@@ -63,7 +66,7 @@ The **Price_list.csv** file retrieves the following data Street, City, Price and
 ### Prices.png
 
 ![Image of Prices.png]
-()
+(https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment1/prices.png)
 
 ### Price_list.csv
 
@@ -72,7 +75,6 @@ The **Price_list.csv** file retrieves the following data Street, City, Price and
 ------------ | ------------- | ------------- | ------------- | ------------- |
 Ved Volden 5, 5. TV | 1425 København K | 4000000 | 91 | 43956 
 Rådhusstræde 4C, 1 | 1466 København K | 4895000 | 105 | 46619 
-
 Ved Volden 5, 5. TV | 1425 København K | 4000000 | 91 | 43956
 ådhusstræde 4C, 1 | 1466 København K | 4895000 | 105 | 46619
 Store Kongensgade 112A, 3 | 1264 København K | 250000 | 135
