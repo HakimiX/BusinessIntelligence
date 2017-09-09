@@ -97,6 +97,7 @@ Andreas Bjørns Gade 4, 3. TH | 1428 København K	| 1700000 | 54 | 31481
 
 `
   import os
+  
   import csv
   import requests
   import platform 
