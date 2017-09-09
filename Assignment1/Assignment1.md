@@ -118,7 +118,7 @@ def download_txt(url, save_path='./downloaded'):
 ```
 
 
-The download_txt function downloades text from a url and saves the text in a certain path './downloaded'
+The download_txt() function downloades text from a url and saves the text in a certain path './downloaded'
 
 ```python
 def generate_csv(txt_input_path, csv_output_path):
@@ -146,7 +146,7 @@ def generate_csv(txt_input_path, csv_output_path):
 ```
 
 
-The generate_csv function generates a CSV file with the right format (utf-8) and rows (Street, City, Price, Sqm, Price per sqm). The function also translates the downloaded data/format into readable CSV format, because a CSV file is comma separated, so the function replaces all ' * ' with ' , '. Price_per_sqm is also calculated by dividing price with sqm `int(price) // int(sqm)`
+The generate_csv() function generates a CSV file with the right format (utf-8) and rows (Street, City, Price, Sqm, Price per sqm). The function also translates the downloaded data/format into readable CSV format, because a CSV file is comma separated, so the function replaces all ' * ' with ' , '. Price_per_sqm is also calculated by dividing price with sqm `int(price) // int(sqm)`
 
 
 ```python
@@ -166,7 +166,7 @@ def read_prices(csv_input_path):
 ```
 
 
-The read_prices function reades the prices from the CSV file
+The read_prices() function reades the prices from the CSV file
 
 
 ```python
@@ -181,7 +181,7 @@ def compute_avg_price(data):
 ```
 
 
-The compute_avg function calculates the average price 
+The compute_avg() function calculates the average price 
 
 
 ```python
@@ -194,7 +194,32 @@ def generate_plot(data):
 ```
 
 
+The generate_plot() function generates data for the scatter chart (Prices.png) 
 
+
+```python
+def run():
+    file_url = 'https://raw.githubusercontent.com/datsoftlyngby/' \
+               'soft2017fall-business-intelligence-teaching-material/master/' \
+               'assignments/assignment_1/price_list.txt'
+    txt_file_name = os.path.basename(file_url)
+    txt_path = os.path.join('./', txt_file_name)
+    download_txt(file_url, txt_path)
+    csv_file_name = 'price_list.csv'
+    csv_path = os.path.join(os.getcwd(), csv_file_name)
+    generate_csv(txt_path, csv_path)
+    data = read_prices(csv_path)
+    avg_price = compute_avg_price(data)
+    print(avg_price)
+    generate_plot(data)
+
+
+if __name__ == '__main__':
+    run()
+```
+
+
+The **run()** function is intended to run the code. It indicates where to fetch the data and uses the various functions to fetch data, calculate prices, generate files (csv, png) and prints average price
 
 
 
