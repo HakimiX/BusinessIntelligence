@@ -146,7 +146,57 @@ def generate_csv(txt_input_path, csv_output_path):
 ```
 
 
-The generate_csv function generates a csv with the right format (utf-8) and rows (Street, City, Price, Sqm, Price per sqm). The function also translates the downloaded format into readable CSV format, because a CSV file is comma separated, so the function replaces all '*' with ','. Price_per_sqm is also calculated by dividing price with sqm `int(price) // int(sqm)`
+The generate_csv function generates a CSV file with the right format (utf-8) and rows (Street, City, Price, Sqm, Price per sqm). The function also translates the downloaded data/format into readable CSV format, because a CSV file is comma separated, so the function replaces all ' * ' with ' , '. Price_per_sqm is also calculated by dividing price with sqm `int(price) // int(sqm)`
+
+
+```python
+def read_prices(csv_input_path):
+    with open(csv_input_path, encoding='utf-8') as f:
+        reader = csv.reader(f)
+        _ = next(reader)
+
+        idxs = []
+        prices = []
+        for row in reader:
+            _, _, price, _, _ = row
+            idxs.append(reader.line_num)
+            prices.append(int(price))
+
+    return list(zip(idxs, prices))
+```
+
+
+The read_prices function reades the prices from the CSV file
+
+
+```python
+def compute_avg_price(data):
+    _, prices = zip(*data)
+    avg_price = statistics.mean(prices)
+
+    with open('/tmp/avg_price.txt', 'w', encoding='utf-8') as f:
+        f.write(str(avg_price))
+
+    return avg_price
+```
+
+
+The compute_avg function calculates the average price 
+
+
+```python
+def generate_plot(data):
+
+    x_values, y_values = zip(*data)
+    fig = plt.figure()
+    plt.scatter(x_values, y_values, s=100)
+    fig.savefig('./prices.png', bbox_inches='tight')
+```
+
+
+
+
+
 
 
 
