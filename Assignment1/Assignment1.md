@@ -5,6 +5,9 @@ We started by cloning the assignment repository and created the virtual machine 
 `$ python assignment_1.py`
 
 ## Output
+
+### What is the output of this program?
+
 By running the assignment_1.py script, the program outputs three different files, respectively **price_list.txt**, **price_list.csv** and **prices.png**. 
 
 **Price_list.txt** - TXT is a file extension for a text file, used by many different text editors. Text is a human-readable sequence of characters and the words they form can be encoded into computer-readable formats. **Price_list.txt** contains the following values Street, City, Price and Sqm. 
@@ -17,7 +20,9 @@ The **Price_list.csv** file retrieves the following data: *Street*, *City*, *Pri
 
 ## Files
 
-### Price_list.txt
+### List the all files that this program generates.
+
+#### Price_list.txt
 
   * Ved Volden 5, 5. TV; 1425 København K	4000000	91
   * Rådhusstræde 4C, 1; 1466 København K	4895000	105
@@ -63,11 +68,11 @@ The **Price_list.csv** file retrieves the following data: *Street*, *City*, *Pri
   * Gothersgade 147, 3. TV; 1123 København K	3622500	68
 
 
-### Prices.png
+#### Prices.png
 
 ![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment1/prices.png)
 
-### Price_list.csv
+#### Price_list.csv
 
 
    Street    |      City     |     Price     |      Sqm      | Price per sqm |
@@ -85,7 +90,9 @@ Toldbodgade 10A, 1 | 1253 København K | 3750000	| 184 | 20380
 Andreas Bjørns Gade 4, 3. TH | 1428 København K	| 1700000 | 54 | 31481
 
 
-### 
+### Describe in natural language and line-by-line what the program is doing. Describe also for each line what the Python code expresses.
+
+
 
 
 
