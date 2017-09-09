@@ -95,15 +95,17 @@ Andreas Bjørns Gade 4, 3. TH | 1428 København K	| 1700000 | 54 | 31481
 
 #### Describe in natural language and line-by-line what the program is doing. Describe also for each line what the Python code expresses.
 
-  `import os`
-  `import csv`
-  import requests
-  import platform 
-  import statistics
-  import matplotlib
-  matplotlib.use('agg')
-  import matplotlib.pyplot as plt
-`
+```python
+import os
+import csv
+import requests
+import platform 
+import statistics
+import matplotlib
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
+```
+
 
 sdasdas
 
