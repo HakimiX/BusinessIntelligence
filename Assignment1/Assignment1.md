@@ -65,8 +65,7 @@ The **Price_list.csv** file retrieves the following data Street, City, Price and
 
 ### Prices.png
 
-![Image of Prices.png]
-(https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment1/prices.png)
+![](Assignment1/prices.png?raw=true)
 
 ### Price_list.csv
 
@@ -77,7 +76,7 @@ Ved Volden 5, 5. TV | 1425 København K | 4000000 | 91 | 43956
 Rådhusstræde 4C, 1 | 1466 København K | 4895000 | 105 | 46619 
 Ved Volden 5, 5. TV | 1425 København K | 4000000 | 91 | 43956
 ådhusstræde 4C, 1 | 1466 København K | 4895000 | 105 | 46619
-Store Kongensgade 112A, 3 | 1264 København K | 250000 | 135
+Store Kongensgade 112A, 3 | 1264 København K | 250000 | 135 | 1851
 Amaliegade 13G, 2 | 1256 København K | 7375000 | 98 | 75255
 Borgergade 144, 3. TH | 1300 København K | 5825000 | 101 | 57673
 Nørre Søgade 9A, 1. TH | 1370 København K | 1126250	| 107 | 10525
