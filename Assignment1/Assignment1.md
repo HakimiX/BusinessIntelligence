@@ -118,7 +118,7 @@ def download_txt(url, save_path='./downloaded'):
 ```
 
 
-sfs
+The download_txt function downloades text from a url and saves the text in a certain path './downloaded'
 
 
 
