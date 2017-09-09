@@ -120,6 +120,34 @@ def download_txt(url, save_path='./downloaded'):
 
 The download_txt function downloades text from a url and saves the text in a certain path './downloaded'
 
+```python
+def generate_csv(txt_input_path, csv_output_path):
+    with open(txt_input_path, encoding='utf-8') as f:
+        txt_content = f.readlines()
+
+    rows = [['street', 'city', 'price', 'sqm', 'price_per_sqm']]
+    for line in txt_content:
+        line = line.rstrip().replace('  * ', '')
+        address, price, sqm = line.split('\t')
+        street, city = address.split('; ')
+        price_per_sqm = int(price) // int(sqm)
+        row = (street, city, price, sqm, price_per_sqm)
+        rows.append(row)
+
+    if platform.system() == 'Windows':
+        newline=''
+    else:
+        newline=None
+
+    with open(csv_output_path, 'w', newline=newline, encoding='utf-8') as f:
+        output_writer = csv.writer(f)
+        for row in rows:
+            output_writer.writerow(row)
+```
+
+
+The generate_csv function generates a csv with the right format (utf-8) and rows (Street, City, Price, Sqm, Price per sqm). The function also translates the downloaded format into readable CSV format, because a CSV file is comma separated, so the function replaces all '*' with ','. Price_per_sqm is also calculated by dividing price with sqm `int(price) // int(sqm)`
+
 
 
 
