@@ -91,6 +91,7 @@ Andreas Bjørns Gade 4, 3. TH | 1428 København K	| 1700000 | 54 | 31481
 
 
 
+
 ### Python Code
 
 #### Describe in natural language and line-by-line what the program is doing. Describe also for each line what the Python code expresses.
@@ -118,7 +119,7 @@ def download_txt(url, save_path='./downloaded'):
 ```
 
 
-The download_txt() function downloades text from a url and saves the text in a certain path './downloaded'
+The **download_txt()** function downloades text from a url and saves the text in a certain path './downloaded'
 
 ```python
 def generate_csv(txt_input_path, csv_output_path):
@@ -146,7 +147,7 @@ def generate_csv(txt_input_path, csv_output_path):
 ```
 
 
-The generate_csv() function generates a CSV file with the right format (utf-8) and rows (Street, City, Price, Sqm, Price per sqm). The function also translates the downloaded data/format into readable CSV format, because a CSV file is comma separated, so the function replaces all ' * ' with ' , '. Price_per_sqm is also calculated by dividing price with sqm `int(price) // int(sqm)`
+The **generate_csv()** function generates a CSV file with the right format (utf-8) and rows (Street, City, Price, Sqm, Price per sqm). The function also translates the downloaded data/format into readable CSV format, because a CSV file is comma separated, so the function replaces all ' * ' with ' , '. Price_per_sqm is also calculated by dividing price with sqm `int(price) // int(sqm)`
 
 
 ```python
@@ -166,7 +167,7 @@ def read_prices(csv_input_path):
 ```
 
 
-The read_prices() function reades the prices from the CSV file
+The **read_prices()** function reades the prices from the CSV file
 
 
 ```python
@@ -181,7 +182,7 @@ def compute_avg_price(data):
 ```
 
 
-The compute_avg() function calculates the average price 
+The **compute_avg()** function calculates the average price 
 
 
 ```python
@@ -194,7 +195,7 @@ def generate_plot(data):
 ```
 
 
-The generate_plot() function generates data for the scatter chart (Prices.png) 
+The **generate_plot()** function generates data for the scatter chart (Prices.png) 
 
 
 ```python
