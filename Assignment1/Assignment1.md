@@ -92,7 +92,7 @@ Andreas Bjørns Gade 4, 3. TH | 1428 København K	| 1700000 | 54 | 31481
 
 
 
-### Python Code
+### Python Code 
 
 #### Describe in natural language and line-by-line what the program is doing. Describe also for each line what the Python code expresses.
 
@@ -225,6 +225,126 @@ The **run()** function is intended to run the code. It indicates where to fetch 
 
 
 
+## Python Code Commented
+
+```python
+# import statements - imports various modules
+import os
+import csv
+import requests
+import platform
+import statistics
+import matplotlib
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
+
+
+# Defines a method called download_txt
+def download_txt(url, save_path='./downloaded'):
+    # HTTP request library to get the price_list.txt
+    response = requests.get(url)
+    # Assigns the results of the open() method call to variable f
+    with open(save_path, 'wb') as f:
+        f.write(response.content)
+
+
+# Defines a method called generate_csv()
+def generate_csv(txt_input_path, csv_output_path):
+    # Assigns the results of the open() method call to variable f
+    with open(txt_input_path, encoding='utf-8') as f:
+        # Adds the data from the file to variable txt_content
+        txt_content = f.readlines()
+
+    # Creates a list with street, city, price, sqm and price per sqm
+    rows = [['street', 'city', 'price', 'sqm', 'price_per_sqm']]
+    # For every line in the txt_content
+    for line in txt_content:
+        # finds every asterisk (*) symbol and removes them
+        line = line.rstrip().replace('  * ', '')
+        # defines three variables and adds data separeted with tab
+        address, price, sqm = line.split('\t')
+        # defines two variables and adds data separeted by semicolin (;)
+        street, city = address.split('; ')
+        # calculates price per sqm
+        price_per_sqm = int(price) // int(sqm)
+        # creates a tuple seperated by comma (csv file)
+        row = (street, city, price, sqm, price_per_sqm)
+        rows.append(row)
+
+    # Checks OS whether it is windows or not
+    if platform.system() == 'Windows':
+        newline=''
+    else:
+        newline=None
+
+    # Assigns the results of the open() method call to variable f
+    with open(csv_output_path, 'w', newline=newline, encoding='utf-8') as f:
+        # creates a CSV write object
+        output_writer = csv.writer(f)
+        # repeats code for every tuple 
+        for row in rows:
+            # writes to every tuple the file earlier
+            output_writer.writerow(row)
+
+# Defines a method called read_prices()
+def read_prices(csv_input_path):
+    # Assigns the results of the open() method call to variable f
+    with open(csv_input_path, encoding='utf-8') as f:
+        # creates a CSV read object
+        reader = csv.reader(f)
+        _ = next(reader)
+
+        # Defines a collection for index
+        idxs = []
+        # Defines a collection for price
+        prices = []
+        # Repeats code
+        for row in reader:
+            # 
+            _, _, price, _, _ = row
+            idxs.append(reader.line_num)
+            prices.append(int(price))
+
+    return list(zip(idxs, prices))
+
+
+def compute_avg_price(data):
+    _, prices = zip(*data)
+    avg_price = statistics.mean(prices)
+
+    with open('/tmp/avg_price.txt', 'w', encoding='utf-8') as f:
+        f.write(str(avg_price))
+
+    return avg_price
+
+
+def generate_plot(data):
+
+    x_values, y_values = zip(*data)
+    fig = plt.figure()
+    plt.scatter(x_values, y_values, s=100)
+    fig.savefig('./prices.png', bbox_inches='tight')
+
+
+def run():
+    file_url = 'https://raw.githubusercontent.com/datsoftlyngby/' \
+               'soft2017fall-business-intelligence-teaching-material/master/' \
+               'assignments/assignment_1/price_list.txt'
+    txt_file_name = os.path.basename(file_url)
+    txt_path = os.path.join('./', txt_file_name)
+    download_txt(file_url, txt_path)
+    csv_file_name = 'price_list.csv'
+    csv_path = os.path.join(os.getcwd(), csv_file_name)
+    generate_csv(txt_path, csv_path)
+    data = read_prices(csv_path)
+    avg_price = compute_avg_price(data)
+    print(avg_price)
+    generate_plot(data)
+
+
+if __name__ == '__main__':
+    run()
+```
 
 
 
