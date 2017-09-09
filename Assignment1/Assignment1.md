@@ -65,7 +65,7 @@ The **Price_list.csv** file retrieves the following data Street, City, Price and
 
 ### Prices.png
 
-![](Assignment1/prices.png?raw=true)
+![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment1/prices.png)
 
 ### Price_list.csv
 
