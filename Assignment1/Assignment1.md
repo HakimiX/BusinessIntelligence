@@ -107,7 +107,18 @@ import matplotlib.pyplot as plt
 ```
 
 
-sdasdas
+The lines of code above are import statements. When the interpreter encounters an import statement, it imports the modules. Modules make the code easier to understand and use, by logically organizing python code. 
+
+
+```python
+def download_txt(url, save_path='./downloaded'):
+    response = requests.get(url)
+    with open(save_path, 'wb') as f:
+        f.write(response.content)
+```
+
+
+sfs
 
 
 
