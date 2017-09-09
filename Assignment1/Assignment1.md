@@ -119,7 +119,8 @@ def download_txt(url, save_path='./downloaded'):
 ```
 
 
-The **download_txt()** method downloades text from a url and saves the text in a certain path './downloaded'
+The **download_txt()** method downloades text from a url with HTTP library
+
 
 ```python
 def generate_csv(txt_input_path, csv_output_path):
