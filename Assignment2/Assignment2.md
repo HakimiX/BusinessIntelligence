@@ -637,7 +637,7 @@ Zipcode area 7270 has the fewest sales records - 134 sales records
 
 ### How big is the corresponding CSV file in megabytes?
 
-Bash command - `wc -c < ./data/out/7270.csv
+Bash command - `wc -c < ./data/out/7270.csv`
 
 The corresponding CSV file is 8 Kilobytes = 0.008 Megabites
 
