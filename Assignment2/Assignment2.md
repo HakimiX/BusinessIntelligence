@@ -6,16 +6,18 @@ Scrape a complete dataset of historical Danish housing sales data from http://13
 # Execution 
 The data is originally from http.//www.boliga.dk/salg. To get an impression of the data, we pointed the browser to the page with the specified values. This search provides a paginated list with 40 entries per page and in total more than 6400 historical housing sales records fro Copenhagen's city center. We have to store all Danish housing sales records from 1992 to now. 
 
-To replicate our results, navigate to the project folder via Terminal and run the application with the following statement: '$ python -t Application.py'
+To replicate our results, navigate to the project folder via Terminal and run the application with the following statement: `$ python -t Application.py`
 
 # Output
 By running the **Application.py** script, the application scrapes HTML from Boliga.dk and stores the data in CSV files with specified headers: Address, Zip_code, Sell_date etc. And each column corresponds to the header of the tables in the HTML pages: Address/Postnr, Købesum, Dato/Type etc. 
+
+## Count the amount of scraped housing data sales records from your CSV files.
 
 Bash command - `$ find ./data/out -name '*csv' | xargs wc -l | sort -rn`
  
 ### How many sales records are there in total?
 
-1277606 total sales
+There is **1277606** total sales
 
 ### How many sales records are there per zip code area?
 
@@ -614,27 +616,31 @@ Bash command - `$ find ./data/out -name '*csv' | xargs wc -l | sort -rn`
      134 ./data/out/7270.csv
 ```
 
+## Provide some more statistics, with the help of Bash commands.
+
 ### For which zip code area do you have the most sales records?
 
-Zipcode area 2300 has the most sales records - 17406
-`17406 ./data/out/2300.csv`
+Zipcode area 2300 has the most sales records - 17406 sales records
+
 
 ### How big is the corresponding CSV file in kilobytes?
 
 Bash command - `wc -c < ./data/out/2300.csv`
 
-The file is 1289125 kilobytes
+The corresponding CSV file is 1289125 kilobytes
+
 
 ### For which zip code area do you have the fewest sales records?
 
-Zipcode area 7270 has the fewest sales records - 134
-`134 ./data/out/7270.csv`
+Zipcode area 7270 has the fewest sales records - 134 sales records
+
 
 ### How big is the corresponding CSV file in megabytes?
 
 Bash command - `wc -c < ./data/out/7270.csv
 
-8 Kilobytes  = 0.008 Megabites
+The corresponding CSV file is 8 Kilobytes = 0.008 Megabites
+
 
 
 
