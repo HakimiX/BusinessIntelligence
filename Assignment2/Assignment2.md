@@ -4,7 +4,7 @@
 Scrape a complete dataset of historical Danish housing sales data from http://138.197.184.35/boliga. Save the scraped results in one CSV file per zip code area. Furthermore, count the amount of scraped housing data sales records from the CSV files and provide some more statistics, with the help of bash commands. 
 
 # Execution 
-The data is originally from http.//www.boliga.dk/salg. To get an impression of the data, we pointed the browser to the page with the specified values. This search provides a paginated list with 40 entries per page and in total more than 6400 historical housing sales records fro Copenhagen's city center. We have to store all Danish housing sales records from 1992 to now. 
+The data is originally from http://www.boliga.dk/salg. To get an impression of the data, we pointed the browser to the page with the specified values. This search provides a paginated list with 40 entries per page and in total more than 6400 historical housing sales records fro Copenhagen's city center. We have to store all Danish housing sales records from 1992 to now. 
 
 To replicate our results, navigate to the project folder via Terminal and run the application with the following statement: `$ python -t Application.py`
 
