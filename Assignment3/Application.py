@@ -34,7 +34,7 @@ def add_geolocations(decoded_node):
                 progress_bar.update()
 
             except (KeyError, ValueError):
-                break
+                pass
 
 
 # Convert all sales dates in the dataset into proper datetime objects
