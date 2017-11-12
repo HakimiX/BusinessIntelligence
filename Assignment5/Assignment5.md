@@ -26,7 +26,7 @@ Test data:  4366.59123274
 
 ## Part 3
 
-Mean Squared Error (MSE)
+__Mean Squared Error (MSE)__
 
 ```python
 Training data: 100613209.759
@@ -38,7 +38,7 @@ Test data:  78059377.8934
 
 ## Part 4
 
-Pearson's r value
+__Pearson's r value__
 
 ```python
 Training data: 0.127692903639
@@ -48,3 +48,4 @@ Training data: 0.127692903639
 Test data:  0.132688206996
 ```
 
+## Part 5
