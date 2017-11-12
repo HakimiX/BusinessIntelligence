@@ -50,7 +50,7 @@ def run():
     # Part 1 
     # Plot the training data in a scatter with linear regression
 
-    #generate_scatterplot(dataframe)
+    generate_scatterplot(dataframe)
     print("Coefficient: ", coefficient_variable, "Intercept: ", intercept_variable)
 
     # Part 2
