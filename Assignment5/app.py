@@ -40,8 +40,6 @@ intercept_variable = linear_regr.intercept_
 
 
 def generate_scatterplot(dataframe):
-    #plot = dataframe.plot(kind='scatter', x='created', y='karma')
-    #plt.get_figure().savefig('scatterplot.png')
     plot = dataframe.plot(kind='scatter', x='created', y='karma')
     plot.scatter(x_test, y_test)
     plt.plot(x_test, predict_regr, color='black', linewidth=4)
