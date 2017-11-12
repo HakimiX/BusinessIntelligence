@@ -53,23 +53,26 @@ def run():
     # Plot the training data in a scatter with linear regression
 
     #generate_scatterplot(dataframe)
-    #print("Coefficient: ", coefficient_variable, "Intercept: ", intercept_variable)
+    print("Coefficient: ", coefficient_variable, "Intercept: ", intercept_variable)
 
     # Part 2
     # Calculate the mean absolute error (MAE) for training data and test data
 
-    #print('Training data: ' + str(metrics.mean_absolute_error(y_train,linear_regr.predict(x_train.reshape(-1,1)))))
-    #print('Test data: ', str(metrics.mean_absolute_error(y_test, predict_regr)))
+    print("Mean Absolute Error (MAE)")
+    print('Training data: ' + str(metrics.mean_absolute_error(y_train,linear_regr.predict(x_train.reshape(-1,1)))))
+    print('Test data: ', str(metrics.mean_absolute_error(y_test, predict_regr)))
 
     # Part 3
     # Calculate the mean squared error (MSE) for the Training data and Test data
 
-    #print("Training data: ", str(metrics.mean_squared_error(y_train, linear_regr.predict(x_train.reshape(-1,1)))))
-    #print("Test data: ", str(metrics.mean_squared_error(y_test, predict_regr)))
+    print("Mean Squared Error (MSE)")
+    print("Training data: ", str(metrics.mean_squared_error(y_train, linear_regr.predict(x_train.reshape(-1,1)))))
+    print("Test data: ", str(metrics.mean_squared_error(y_test, predict_regr)))
 
     # Part 4
-    # Calculate the 'r' value for the the Training data and test data
+    # Calculate Peasons's 'r' value for the the Training data and test data
 
+    print("Pearsons r value")
     print("Training data: ", str(metrics.r2_score(y_train, linear_regr.predict(x_train.reshape(-1,1)))))
     print("Test data: ", str(metrics.r2_score(y_test, predict_regr)))
 
