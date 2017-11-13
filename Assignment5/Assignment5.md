@@ -47,6 +47,8 @@ print("Training data: ", str(metrics.r2_score(y_train, linear_regr.predict(x_tra
 print("Test data: ", str(metrics.r2_score(y_test, predict_regr)))
 ```
 
+__Output__
+
 ```python
 Training data: 0.127692903639
 ```
