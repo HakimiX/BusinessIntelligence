@@ -12,9 +12,16 @@ The intercept (often labeled as the constant) is the expected mean value of "y"
 
 ## Part 2
 
-Mean Absolute Error (MAE) difference between two continuous variables. 
-
 __Mean Absolute Error (MAE)__
+
+Mean Absolute Error (MAE) difference between two continuous variables. The mean absolute error is an average of the absolute error, which means the smaller the number the better it is. The numbers we get by running the code are fairly far from 0, which makes the mean absolute model inefficient. 
+
+```python
+print('Training data: ' + str(metrics.mean_absolute_error(y_train,linear_regr.predict(x_train.reshape(-1,1)))))
+print('Test data: ', str(metrics.mean_absolute_error(y_test, predict_regr)))
+```
+
+__Output__
 
 ```python
 Training data: 4482.32480631
@@ -27,6 +34,15 @@ Test data:  4366.59123274
 ## Part 3
 
 __Mean Squared Error (MSE)__
+
+Mean Squared Error measures the average of the squares of the errors or deviations - that is, the difference between the estimator and what is estimated. Just like MAE, the smaller the number the better it is. The mean sqaured error is also a bad fit. The difference occurs because the estimator doesn't account for information (outliers) that could produce a more accurate estimate. 
+
+```python
+print("Training data: ", str(metrics.mean_squared_error(y_train, linear_regr.predict(x_train.reshape(-1,1)))))
+print("Test data: ", str(metrics.mean_squared_error(y_test, predict_regr)))
+```
+
+__Output__
 
 ```python
 Training data: 100613209.759
