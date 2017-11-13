@@ -40,6 +40,13 @@ Test data:  78059377.8934
 
 __Pearson's r value__
 
+Pearson's r value is a measure of the linear correlation between two variables x and y. it has a value between +1 and -1, where 1 is total positive linear correlation, 0 is no linear correlation, and -1 is total negative linear correlation. The numbers we get by running the code are close to 0 which makes Pearson's r value the best fit. 
+
+```python
+print("Training data: ", str(metrics.r2_score(y_train, linear_regr.predict(x_train.reshape(-1,1)))))
+print("Test data: ", str(metrics.r2_score(y_test, predict_regr)))
+```
+
 ```python
 Training data: 0.127692903639
 ```
