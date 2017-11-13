@@ -2,9 +2,6 @@
 
 ## Part 1 
 
-![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment5/scatterplot.png)
-
-
 Coefficient - represents the mean change in the response variable for one unit of change in the predictor variable while holding the predictor in the model constant. When the y value increases the x value decreases. 
 
 The intercept (often labeled as the constant) is the expected mean value of "y"
@@ -12,6 +9,10 @@ The intercept (often labeled as the constant) is the expected mean value of "y"
 ```python
 print("Coefficient: ", coefficient_variable)
 print("Intercept: ", intercept_variable)
+```
+
+```python
+enerate_scatterplot(dataframe)
 ```
 
 __Output__
@@ -23,6 +24,9 @@ Coefficient: -4.18548395e-05
 ```python
 Intercept: 61994.37153162
 ```
+
+![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment5/scatterplot.png)
+
 
 ## Part 2
 
