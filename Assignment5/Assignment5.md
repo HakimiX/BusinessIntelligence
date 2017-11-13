@@ -9,6 +9,20 @@ Coefficient - represents the mean change in the response variable for one unit o
 
 The intercept (often labeled as the constant) is the expected mean value of "y"
 
+```python
+print("Coefficient: ", coefficient_variable)
+print("Intercept: ", intercept_variable)
+```
+
+__Output__
+
+```python
+Coefficient: -4.18548395e-05
+```
+
+```python
+Intercept: 61994.37153162
+```
 
 ## Part 2
 

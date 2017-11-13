@@ -50,8 +50,9 @@ def run():
     # Part 1 
     # Plot the training data in a scatter with linear regression
 
-    generate_scatterplot(dataframe)
-    print("Coefficient: ", coefficient_variable, "Intercept: ", intercept_variable)
+    #generate_scatterplot(dataframe)
+    print("Coefficient: ", coefficient_variable)
+    print("Intercept: ", intercept_variable)
 
     # Part 2
     # Calculate the mean absolute error (MAE) for training data and test data
