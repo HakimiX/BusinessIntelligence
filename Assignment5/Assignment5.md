@@ -12,7 +12,7 @@ print("Intercept: ", intercept_variable)
 ```
 
 ```python
-enerate_scatterplot(dataframe)
+generate_scatterplot(dataframe)
 ```
 
 __Output__
