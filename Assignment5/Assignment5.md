@@ -73,4 +73,3 @@ Training data: 0.127692903639
 Test data:  0.132688206996
 ```
 
-## Part 5
