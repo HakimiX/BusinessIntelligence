@@ -84,16 +84,20 @@ Root Mean Square Error (RMSE) Average,  1787.18952549
 
 __Shape and Size__
 
-There are many important differences between benign and malignant tumors, some of them include: Growth rate, Cellular apperance (shape).
+There are many important differences between benign and malignant tumors, some of them include: Growth rate and Cellular apperance (shape).
 
 When dealing with breast cancer, tumors are graded based on a scale of one to three indicating how aggresive the cancerous cells are:
 * Low grade (1) - Well differentiated
 * Intermediate grade (2) - Moderately differentiated
 * High grade (3) - Poorly differentiated 
 
-Low grade tumors look more like normal tissue and high grade tumors look abnormal and less like normal tissue. The shape of a tumor may be a sign of malignancy, therefor it may be crucial to look into the shape of a tumor and determine where it fits on the "Tumor Grades". Average shape - `Average Shape:  0.766259398496`
+Low grade tumors look more like normal tissue and high grade tumors look abnormal and less like normal tissue. The shape of a tumor may be a sign of malignancy, therefor it may be crucial to look into the shape and determine where it fits on the "Tumor Grades". `Average Shape:  0.766259398496`
+
+Another way malignant cells are different from normal cells is in the size. They often have irregular size of cell and nucleus. `Average Size:  0.887625313283`
 
 According to pathologsts, when looking at tumor cells, it is often obvious whether they are normal, benign og cancerous cells. Cancer cells often have abnormal chromosomes, making them larger and darker. Sometimes the difference may be subtle. 
+
+Another factor could be growth rate 
 
 ```python
 logistic_regression()
@@ -101,7 +105,13 @@ logistic_regression()
 
 __Output__
 
-![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment6/model/Breast_cancer_dataset.jpg)
+```python
+Average Size:  0.887625313283
+```
+
+```python
+Average Shape:  0.766259398496
+```
 
 ```python
 Accuracy:  0.80701754386
@@ -136,13 +146,10 @@ Accuracy:  0.894736842105
 Accuracy:  0.964285714286
 ```
 
-```python
-Average Size:  0.887625313283
-```
+![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment6/model/Breast_cancer_dataset.jpg)
 
-```python
-Average Shape:  0.766259398496
-```
+
+
 
 
 
