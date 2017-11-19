@@ -31,7 +31,7 @@ Training Data:  4770.080814835201
 Test Data:  4802.906732149257
 ```
 
-![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment5/scatterplot.png)
+![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment6/model/scatterplot.png)
 
 ## Part 2
 
@@ -90,7 +90,7 @@ logistic_regression()
 
 __Output__
 
-![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment5/scatterplot.png)
+![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment6/model/Breast_cancer_dataset.jpg)
 
 ```python
 Accuracy:  0.80701754386
