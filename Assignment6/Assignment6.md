@@ -2,7 +2,7 @@
 
 ## Part 1
 
-Compared to last assignment, the added variable decreases the absolute error. 87% difference in training data and 79% difference in testing data. RMSE is not average error, it's the square root of the average of squared errors, thus confounding information about the average error with additional information concerning variation in the errors. 
+Compared to last assignment, the added variable decreases the absolute error. 87% difference in training data and 79% difference in testing data. RMSE is not average error, it's the square root of the average of squared errors, thus confounding information about the average error with additional information concerning variation in the errors. The third dimension (submitted posts) offers a better overall relation. 
 
 Last Assignment MAE
 
@@ -44,7 +44,14 @@ Test Data:  4802.906732149257
 
 ## Part 2
 
-Description
+What is better: more data or better algorithms? 
+
+There are both advantages and disadvanntages with the 80/20 split. When we are building models to predict the future, we must split the dataset into training datasets and testing datasets. Train and test sets are important to ensure that our learning model is able to generalize well to new data. This applies for both classification models and linear regression models.
+
+Working with a complete dataset could produce a more accurate score, but there are also times when more data doesn't help. There can be many cases in which adding more examples to our training set will not improve the model performance. It depends on the quality of the data, because too much data or inconsistent data could make it harder. It would hold true if the data is relevant to the model.
+
+In this case more data is preffered, as it gives a more accurate score. 
+
 
 __Run__
 
