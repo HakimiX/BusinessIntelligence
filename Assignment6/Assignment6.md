@@ -4,6 +4,8 @@
 
 Description
 
+__Run__
+
 ```python
 print("Mean Absolute Error (MAE)")
 print("Training Data: ", str(metrics.mean_absolute_error(y_train, linear_regr.predict(x_and_z_train))))
@@ -36,6 +38,8 @@ Test Data:  4802.906732149257
 ## Part 2
 
 Description
+
+__Run__
 
 ```python
 kfold_cross_validation()
@@ -97,7 +101,7 @@ Another way malignant cells are different from normal cells is in the size. They
 
 According to pathologsts, when looking at tumor cells, it is often obvious whether they are normal, benign og cancerous cells. Cancer cells often have abnormal chromosomes, making them larger and darker. Sometimes the difference may be subtle. 
 
-Another factor could be growth rate 
+__Run__
 
 ```python
 logistic_regression()
