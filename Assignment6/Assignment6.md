@@ -88,7 +88,7 @@ Root Mean Square Error (RMSE) Average,  1787.18952549
 
 __Shape and Size__
 
-There are many important differences between benign and malignant tumors, some of them include: Growth rate and Cellular apperance (shape).
+There are many important differences between benign and malignant tumors, some of them include: Cellular apperance such as shape and size
 
 When dealing with breast cancer, tumors are graded based on a scale of one to three indicating how aggresive the cancerous cells are:
 * Low grade (1) - Well differentiated
