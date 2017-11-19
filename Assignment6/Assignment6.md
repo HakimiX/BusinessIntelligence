@@ -2,9 +2,10 @@
 
 ## Part 1
 
-Compared to last assignment, the added variable decreases the absolute error with 87% difference in training data and 79% difference in test data
+Compared to last assignment, the added variable decreases the absolute error. 87% difference in training data and 79% difference in testing data. 
 
 Last Assignment MAE
+
 `Training data: 4482.32480631`
 `Test data:  4366.59123274`
 
