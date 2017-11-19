@@ -86,6 +86,10 @@ Root Mean Square Error (RMSE) Average,  1787.18952549
 
 ## Part 3
 
+__Dataset__
+
+The breast cancer dataset contains 570 rows including manually added headers `id, diagnosis, radius1, texture1, perimeter1, area1, smoothness1, compactness1, concavity1,concavepoints1, ... radius3, texture3, perimeter3, area3, smoothness3, compactness3, concavity3, concavepoints3, symmetry3 and fractal dimension3`
+
 __Shape and Size__
 
 There are many important differences between benign and malignant tumors, some of them include: Cellular apperance such as shape and size
