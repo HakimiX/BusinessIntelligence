@@ -46,7 +46,7 @@ Test Data:  4802.906732149257
 
 What is better: more data or better algorithms? 
 
-There are both advantages and disadvanntages with the 80/20 split. When we are building models to predict the future, we must split the dataset into training datasets and testing datasets. Train and test sets are important to ensure that our learning model is able to generalize well to new data. This applies for both classification models and linear regression models.
+There are both advantages and disadvantages with the 80/20 split. When we are building models to predict the future, we must split the dataset into training datasets and testing datasets. Train and test sets are important to ensure that our learning model is able to generalize well to new data. This applies for both classification models and linear regression models.
 
 Working with a complete dataset could produce a more accurate score, but there are also times when more data doesn't help. There can be many cases in which adding more examples to our training set will not improve the model performance. It depends on the quality of the data, because too much data or inconsistent data could make it harder. It would hold true if the data is relevant to the model.
 
