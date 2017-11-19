@@ -82,7 +82,18 @@ Root Mean Square Error (RMSE) Average,  1787.18952549
 
 ## Part 3
 
-Description
+__Shape and Size__
+
+There are many important differences between benign and malignant tumors, some of them include: Growth rate, Cellular apperance (shape).
+
+When dealing with breast cancer, tumors are graded based on a scale of one to three indicating how aggresive the cancerous cells are:
+* Low grade (1) - Well differentiated
+* Intermediate grade (2) - Moderately differentiated
+* High grade (3) - Poorly differentiated 
+
+Low grade tumors look more like normal tissue and high grade tumors look abnormal and less like normal tissue. The shape of a tumor may be a sign of malignancy, therefor it may be crucial to look into the shape of a tumor and determine where it fits on the "Tumor Grades". Average shape - `Average Shape:  0.766259398496`
+
+According to pathologsts, when looking at tumor cells, it is often obvious whether they are normal, benign og cancerous cells. Cancer cells often have abnormal chromosomes, making them larger and darker. Sometimes the difference may be subtle. 
 
 ```python
 logistic_regression()
@@ -128,6 +139,11 @@ Accuracy:  0.964285714286
 ```python
 Average Size:  0.887625313283
 ```
+
+```python
+Average Shape:  0.766259398496
+```
+
 
 
 

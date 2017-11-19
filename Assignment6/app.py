@@ -131,8 +131,9 @@ def logistic_regression():
 
     print()
     average_size = np.array(calculated_list[1]).astype(np.float)
-
+    average_shape = np.array(calculated_list[0]).astype(np.float)
     print("Average Size: ", str(np.mean(average_size)))
+    print("Average Shape: ", str(np.mean(average_shape)))
 
 
 def generate_scatterplot(dataframe):
@@ -152,7 +153,7 @@ def run():
     # Part 1 
     # Split data into 80/20 training and testing and create a new multivariate linear
     # analysis. In this model, include the number of posts as an addition to time
-    generate_scatterplot(dataframe)
+    #generate_scatterplot(dataframe)
 
     # Report the MAE and RMSE
     print("Mean Absolute Error (MAE)")
