@@ -2,11 +2,12 @@
 
 ## Part 1
 
-Compared to last assignment, the added variable decreases the absolute error. 87% difference in training data and 79% difference in testing data. 
+Compared to last assignment, the added variable decreases the absolute error. 87% difference in training data and 79% difference in testing data. RMSE is not average error, it's the square root of the average of squared errors, thus confounding information about the average error with additional information concerning variation in the errors. 
 
 Last Assignment MAE
 
 `Training data: 4482.32480631`
+
 `Test data:  4366.59123274`
 
 
@@ -21,11 +22,11 @@ print("Training Data: ", str(sqrt(metrics.mean_squared_error(y_train, linear_reg
 print("Test Data: ", str(sqrt(metrics.mean_squared_error(y_test, predict_regr))))
 ```
 
-__Output__
-
 ```python
 generate_scatterplot(dataframe)
 ```
+
+__Output__
 
 ```python
 Mean Absolute Error (MAE)
