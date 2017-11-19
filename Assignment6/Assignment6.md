@@ -117,7 +117,7 @@ Low grade tumors look more like normal tissue and high grade tumors look abnorma
 
 Another way malignant cells are different from normal cells is in the size. They often have irregular size of cell and nucleus. `Average Size:  0.887625313283`
 
-According to pathologsts, when looking at tumor cells, it is often obvious whether they are normal, benign og cancerous cells. Cancer cells often have abnormal chromosomes, making them larger and darker. Sometimes the difference may be subtle. 
+According to pathologsts, when looking at tumor cells, it is often obvious whether they are normal, benign or cancerous cells. Cancer cells often have abnormal chromosomes, making them larger and darker. Sometimes the difference may be subtle. 
 
 __Run__
 
