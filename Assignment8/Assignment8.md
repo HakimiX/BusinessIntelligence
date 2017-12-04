@@ -8,5 +8,5 @@
 
 ### Classification Report
 
-![Text]()
+![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment8/Model/Classification.jpg)
 
