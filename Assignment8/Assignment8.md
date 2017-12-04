@@ -48,12 +48,6 @@ Dataframe Average Height: Female 65.765
 Dataframe Average Height: Male 71.41
 ```
 
-__Population Average Height__ 
-```python
-Denmark average height: 71
-USA average height: 68.4
-```
-
 Dataframe average female height 65.76 inches compared to Denmark average female height 66.44 inches
 ```python
 t_test, population_mean = stats.ttest_1samp(height_from_dataframe_female, 66)
@@ -87,6 +81,12 @@ T-test: 3.37121510713  Popmean:  0.00320647462375
 ```
 
 ### Population Comparison
+
+__Population Average Height__ 
+```python
+Denmark average height: 71
+USA average height: 68.4
+```
 
 Dataframe both male and female height compared to Denmark (71 inches)
 ```python
