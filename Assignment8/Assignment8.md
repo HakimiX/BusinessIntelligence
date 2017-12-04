@@ -52,6 +52,9 @@ T-test: -0.825318221249  Popmean:  0.419433209147
 
 Dataframe average male height 71 inches compared to USA average male height 69.2 inches
 ```python
+t_test, population_mean = stats.ttest_1samp(height_from_dataframe_male, 69)
+```
+```python
 T-test: 3.37121510713  Popmean:  0.00320647462375
 ```
 
@@ -59,13 +62,19 @@ T-test: 3.37121510713  Popmean:  0.00320647462375
 
 Dataframe both male and female height compared to Denmark
 ```python
+t_test, population_mean = stats.ttest_1samp(height_from_dataframe, 71)
+```
+```python
 T-test: -3.85063165253  Popmean:  0.00042684721728
 ```
 
 Dataframe both male and female height compared to USA
 ```python
+t_test, population_mean = stats.ttest_1samp(height_from_dataframe, 68)
+```
+```python
 T-test: 0.937718588959  Popmean:  0.354160229104
-````
+```
 
 
 
