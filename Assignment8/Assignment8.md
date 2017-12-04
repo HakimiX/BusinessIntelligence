@@ -34,8 +34,6 @@ groupby_gender = brain_size_dataframe.groupby('Gender')
     for gender, value in groupby_gender['Height']:
         print("Dataframe Average Height:", gender, value.mean())
 ```
-
-Dataframe average height male and female
 ```python
 Dataframe Average Height: Female 65.765
 Dataframe Average Height: Male 71.41
@@ -44,7 +42,7 @@ Dataframe Average Height: Male 71.41
 Population average height 
 ```python
 Denmark average height: 71
-US average height: 68.4
+USA average height: 68.4
 ```
 
 Dataframe average female height 65.76 inches compared to Denmark average female height 66.44 inches
