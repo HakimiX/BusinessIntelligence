@@ -19,6 +19,8 @@ __Recall__ also known as sensitivity is the ratio of correctly predicted observa
 
 ![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment8/Model/model.jpg)
 
+Precision is accuracy of positive predictions and is around 0.80-0.90, which means we are somewhat consistent. The F1 Score is a helpful metric for comparing two classifiers (benign, malignant), it takes into account precision and the recall, and is created by finding the mean of precision and recall. 
+
 ## Part 2 - Population and T-test
 
 The `brain_size.csv` dataset contains female and male height. We were not sure whether to compare male and female together or separately, so we have done both
