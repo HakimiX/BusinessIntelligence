@@ -14,11 +14,26 @@ The `brain_size.csv` dataset contains female and male height. We were not sure w
 
 ### Individual Gender Comparison
 
+__Average Height__
+
 Average female height in Denmark - 168.7 cm (66.41 inches)
 
 Average female height in USA - 162 cm (63.77 inches)
 
-Source - [a link](http://www.averageheight.co/average-female-height-by-country)
+Average male height in Denmark - 182.6 cm (71.88 inches)
+
+Average male height in USA - 175.2 (69.2 inches)
+
+[Source](http://www.averageheight.co/average-female-height-by-country)
+
+__Dataframe Average Height__
+
+```python
+groupby_gender = brain_size_dataframe.groupby('Gender')
+    
+    for gender, value in groupby_gender['Height']:
+        print("Dataframe Average Height:", gender, value.mean())
+```
 
 Dataframe average height male and female
 ```python
