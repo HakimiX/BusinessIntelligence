@@ -14,7 +14,7 @@ The `brain_size.csv` dataset contains female and male height. We were not sure w
 
 ### Individual Gender comparison
 
-Dataframe (Brain_size.csv) average height male and female
+Dataframe average height male and female
 ```python
 Dataframe Average Height: Female 65.765
 Dataframe Average Height: Male 71.41
