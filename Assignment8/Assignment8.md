@@ -6,13 +6,15 @@
 
 Accuracy and Precision are both important factors when taking data measurements. They both reflect how close a measurement is to an actual value. 
 
-Accuracy is how close a measured value is to the actual value. The closer the value is to the actual value, the more accurate the measurement. Accuracy is more important when trying to hit a target. 
+__Accuracy__ is how close a measured value is to the actual value. The closer the value is to the actual value, the more accurate the measurement. Accuracy is more important when trying to hit a target. 
 
-Precision is how close the measured values are to each other. The close each measurment is to the other measurements, the more precise the measurement. Precision is more important in calculations. 
+__Precision__ is how close the measured values are to each other. The closer each measurement is to the other measurements, the more precise the measurement. Precision is more important in calculations. 
 
 ### Precision and Recall
 
+Precision and Recall are both important factors when trying to understand and measure relevance. High precision means that we have more relevant results than irrelevant ones. 
 
+__Recall__ also known as sensitivity is the ratio of correctly predicted observations or relevant instances that have been retrieved over the total amount of instances.
 
 
 ![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment8/Model/model.jpg)
