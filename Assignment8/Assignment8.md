@@ -6,7 +6,7 @@
 
 ### Precision and Recall
 
-### Classification Report
+### Classification 
 
-![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment8/Model/Classification.jpg)
+![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment8/Model/Classifiction_model.jpg)
 
