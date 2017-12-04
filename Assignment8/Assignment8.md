@@ -60,7 +60,7 @@ T-test: 3.37121510713  Popmean:  0.00320647462375
 
 ### Population Comparison
 
-Dataframe both male and female height compared to Denmark
+Dataframe both male and female height compared to Denmark (71 inches)
 ```python
 t_test, population_mean = stats.ttest_1samp(height_from_dataframe, 71)
 ```
@@ -68,7 +68,7 @@ t_test, population_mean = stats.ttest_1samp(height_from_dataframe, 71)
 T-test: -3.85063165253  Popmean:  0.00042684721728
 ```
 
-Dataframe both male and female height compared to USA
+Dataframe both male and female height compared to USA (68.4 inches)
 ```python
 t_test, population_mean = stats.ttest_1samp(height_from_dataframe, 68)
 ```
