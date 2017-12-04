@@ -39,7 +39,7 @@ Dataframe Average Height: Female 65.765
 Dataframe Average Height: Male 71.41
 ```
 
-Population average height 
+__Population Average Height__ 
 ```python
 Denmark average height: 71
 USA average height: 68.4
