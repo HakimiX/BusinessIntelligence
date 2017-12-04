@@ -4,7 +4,16 @@
 
 ### Accuracy and Precision
 
+Accuracy and Precision are both important factors when taking data measurements. They both reflect how close a measurement is to an actual value. 
+
+Accuracy is how close a measured value is to the actual value. The closer the value is to the actual value, the more accurate the measurement. Accuracy is more important when trying to hit a target. 
+
+Precision is how close the measured values are to each other. The close each measurment is to the other measurements, the more precise the measurement. Precision is more important in calculations. 
+
 ### Precision and Recall
+
+
+
 
 ![Text](https://github.com/HakimiX/BusinessIntelligence/blob/master/Assignment8/Model/model.jpg)
 
