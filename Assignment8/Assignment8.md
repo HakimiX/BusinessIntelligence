@@ -12,12 +12,18 @@
 
 The `brain_size.csv` dataset contains female and male height. We were not sure whether to compare male and female together or separately, so we have done both
 
-### Individual Gender comparison
+### Individual Gender Comparison
 
 Dataframe average height male and female
 ```python
 Dataframe Average Height: Female 65.765
 Dataframe Average Height: Male 71.41
+```
+
+Population average height 
+```python
+Denmark average height: 71
+USA average height: 68.4
 ```
 
 Dataframe average female height 65.76 inches compared to Denmark average female height 66.44 inches
